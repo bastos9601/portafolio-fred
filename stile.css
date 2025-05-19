@@ -92,13 +92,6 @@ h3 {
   display: flex;
   justify-content: center;
 }
-
-
-
-
-
-
-
 .container.logos {
   display: flex;
   gap: 40px;
@@ -172,50 +165,95 @@ h3 {
 .team-members {
   display: flex;
   justify-content: center;
-  gap: 40px;
   margin-top: 40px;
+  gap: 25px;
 }
-.member {
-  background-color: #1a1a1a;
-  padding: 20px;
-  border-radius: 10px;
-  width: 250px;
+
+.member1 {
+  display: flex;
+  align-items: center;
+  background-color: #191a1d;
+  padding: 28px 32px;
+  border-radius: 14px;
+  width: 400px;
+  box-shadow: 0 2px 12px #00000033;
+  gap: 28px;
 }
-.member h3 {
-  margin: 10px 0 5px;
-}
-.member p {
-  color: #ccc;
-}
-.member .social a {
-  margin: 0 5px;
-}
+
 .photo {
   width: 100%;
   height: 250px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  border: 3px solid #232526;
+  background-image: url('/assets/ursua.jpg');
   background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin-bottom: 15px;
+}
+.photo2 {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  border: 3px solid #232526;
+  background-image: url('/assets/yo.png');
+  background-size: cover;
 }
 
-.photo.mike {
-  background-image: url('/assets/edite2.png');
+.member-info {
+  flex: 1;
 }
 
-.photo.hanna {
-  background-image: url('/assets/edite2.png');
+.member-info h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
 }
 
-.member .social {
-  margin-top: 10px;
+.member-info .role {
+  display: block;
+  color: #4ee1a0;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
-.member .social a {
-  color: #00ffe0;
-  font-size: 1.2rem;
-  text-decoration: none;
-  margin: 0 8px;
+
+.member-info p {
+  color: #b3b3b3;
+  font-size: 0.98rem;
+  margin: 0 0 16px 0;
 }
+
+.social {
+  display: flex;
+  gap: 10px;
+}
+
+.social a img {
+  width: 22px;
+  height: 22px;
+  filter: invert(66%) sepia(54%) saturate(357%) hue-rotate(98deg) brightness(92%) contrast(92%);
+  transition: filter 0.2s;
+}
+
+.social a:hover img {
+  filter: invert(49%) sepia(98%) saturate(749%) hue-rotate(98deg) brightness(92%) contrast(92%);
+}
+.member1 h3 {
+  margin: 10px 0 5px;
+}
+.member1 p {
+  color: #ccc;
+}
+.member1 .social a {
+
+  margin: 0 5px;
+}
+
+
+
+
+
 
 /* Responsive para tablets (menor a 992px) */
 @media (max-width: 991px) {
